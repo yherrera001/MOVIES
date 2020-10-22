@@ -63,3 +63,9 @@ SELECT * FROM moviestwo;
 -- CHANGE THE NAME OF A MOVIE TO 'THIS IS YAS'
 UPDATE moviestwo SET Title = 'THIS IS YAS' WHERE Title = 'Starship Troopers';
 SELECT * FROM moviestwo;
+
+-- ADD A NEW TABLE DATA
+INSERT INTO moviestwo (MovieID, Title, Runtime, Genre, IMDB_Score, Rating) VALUES (9, 'Black Panther', 150, 'Action', 9.0, 'PG');
+Describe moviestwo;
+show tables; 
+SELECT * FROM moviestwo;
