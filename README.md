@@ -1,6 +1,5 @@
 ## MOVIES
 
-
 ## CREATE DATABASE movies;
 USE movies;
 SHOW TABLES;
@@ -45,10 +44,8 @@ UPDATE moviestwo SET rating = 'R' WHERE title = 'Starship Troopers';
 
 SELECT ALL * FROM moviestwo;
 
-SELECT * FROM moviestwo WHERE runtime < 100 AND rating = 'PG' OR 'G';
-
 ## Show the ID number and rating of all of the Horror and Documentary movies in the database. Do this in only one query.
-SELECT title, rating FROM moviestwo WHERE genre IN ('Horror' ,'Documentary');
+SELECT MovieID, rating FROM moviestwo WHERE genre IN ('Horror', 'Documentary');
 
 ## This time let's find the average, maximum, and minimum IMDB score for movies of each rating. That last query isn't very informative for ratings that only have 1 entry. 
 ## Use a HAVING COUNT(*) > 1 clause to only show ratings with multiple movies showing.
